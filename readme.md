@@ -13,7 +13,7 @@ Audio Macro is a simple macro script that will play a sound with a specified key
 
 ## Configuration
 
-1. Download and unzip the <a target="_blank" href="https://github.com/wowkster/AudioMacro/releases/tag/1.0.0">Audio Macro - X.X.X.zip</a> archive into any empty directory
+1. Download and unzip the <a target="_blank" href="https://github.com/wowkster/AudioMacro/releases/tag/1.0.0">AudioMacro-X.X.X.zip</a> archive into any empty directory
 2. Add your sound file(s) which can be either `.wav` or `.mp3` into the `assets\sounds\` directory
 3. Open the `macro.ahk` in `assets\` with a text editor. It will look like this:
 ```ahk
