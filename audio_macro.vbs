@@ -1,27 +1,27 @@
 ' Create Shell object
 Set oShell = CreateObject ("Wscript.Shell") 
-' get working directory
+' Get working directory
 workingDir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
-
-Sub Main()
-	copy
-End Sub
-
-' If not running in startup folder, copy itself there otherwise run the macro
-Function copy
-	' Get the startup folder location
+' Get the startup folder location
 	startFolder = oShell.ExpandEnvironmentStrings( "%APPDATA%" ) & "\Microsoft\Windows\Start Menu\Programs\Startup"
 
+' If not running in startup folder, copy itself there. Otherwise run the macro
+Sub Main()
+	
 	' Check if the startup folder is the same as the working dir
 	If startFolder = workingDir Then 
 		' Start script and exit program
 		MsgBox "Starting hotkey script...", 0, "Audio Macro"
 		ahk
-		Exit Function
 	Else
 		MsgBox "Script is not running in startup folder!", 0, "Audio Macro"
 		MsgBox "Copying source to startup folder...", 0, "Audio Macro"
+		copy
 	End If
+End Sub
+
+' Copy the files to the startup folder
+Function copy
 
 	' Copy the vbs file
 	sSourceFile = workingDir & "\" & WScript.ScriptName
