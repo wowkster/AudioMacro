@@ -3,7 +3,7 @@ Set oShell = CreateObject ("Wscript.Shell")
 ' Get working directory
 workingDir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
 ' Get the startup folder location
-	startFolder = oShell.ExpandEnvironmentStrings( "%APPDATA%" ) & "\Microsoft\Windows\Start Menu\Programs\Startup"
+startFolder = oShell.ExpandEnvironmentStrings( "%APPDATA%" ) & "\Microsoft\Windows\Start Menu\Programs\Startup"
 
 ' If not running in startup folder, copy itself there. Otherwise run the macro
 Sub Main()
