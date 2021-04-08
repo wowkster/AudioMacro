@@ -22,7 +22,7 @@ SoundPlay, sheesh.mp3
 return
 ```
 4. Change the file name `sheesh.mp3` to match whatever your file is called.
-5. If you want, you can add more hotkeys by copying the AHK function and changing the `RAlt` to another key bind. Official documentation for the AHK key list and combinations can be found on the <a target="blank" href="https://www.autohotkey.com/docs/KeyList.htm">AutoHotKey Documentation Page</a>
+5. If you want, you can add more hotkeys by copying the AHK function and changing the `RAlt` to another key bind. Official documentation for the AHK key list and combinations can be found on the <a target="_blank" href="https://www.autohotkey.com/docs/KeyList.htm">AutoHotKey Documentation Page</a>
 
 ## Installation
 1. Double click the `audio_macro.vbs` file and it should prompt you through the installation
